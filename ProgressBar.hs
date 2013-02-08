@@ -27,7 +27,7 @@ drawbar path msize dw = do
     putStr $ "\r" ++ line ++ spaces
     void $ printf "%.2f" pct
     hFlush stdout
-    threadDelay 500
+    threadDelay 500000
 
 goodlink :: FilePath -> FilePath -> IO Bool
 goodlink filename fd = do
